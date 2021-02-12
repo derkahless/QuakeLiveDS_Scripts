@@ -17,13 +17,13 @@ echo "Downloading minqlx-plugins..."
 git clone https://github.com/MinoMino/minqlx-plugins.git
 echo "Installing pip..."
 wget https://bootstrap.pypa.io/get-pip.py
-sudo python3.5 get-pip.py
+sudo python3.6 get-pip.py
 rm get-pip.py
 echo "Installing build-essential..."
 sudo apt-get -y install build-essential
 echo "Installing pyzmq and hiredis..."
-sudo python3.5 -m easy_install pyzmq hiredis
+sudo python3.6 -m easy_install pyzmq hiredis
 echo "Installing minqlx requirements..."
-sudo python3.5 -m pip install -r minqlx-plugins/requirements.txt
+sudo python3.6 -m pip install -r minqlx-plugins/requirements.txt
 echo "Done."
 exit
